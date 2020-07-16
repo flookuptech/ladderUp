@@ -1,0 +1,54 @@
+section {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.sectionData {
+  background-color: #b4dbdc;
+}
+
+.sectionNumber {
+  color: white;
+  font-weight: 900;
+  padding: 5px;
+  margin-top: 10vh;
+  position: relative;
+  font-family: open;
+}
+
+.sectionName {
+  color: #12ac92;
+  font-weight: bold;
+  padding: 5px;
+  font-family: League Spartan;
+}
+
+.divider {
+  color: white;
+  margin-left: 10px;
+  font-weight: 900;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+.sectionText {
+  color: #816f62;
+  padding: 5px;
+  font-family: "Vollkorn", serif;
+}
+
+.readMoreText {
+  font-size: 25px;
+  padding: 25px;
+  color: #816f62;
+}
+
+.readMoreIcon {
+  color: white;
+  font-weight: 900;
+}
+
+.section_image {
+  height: 100%;
+  width: 100%;
+}

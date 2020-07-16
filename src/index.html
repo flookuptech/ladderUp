@@ -57,6 +57,11 @@
     />
     <link type="text/plain" rel="author" href="humans.txt" />
     <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="../node_modules//bulma/css/bulma.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <!--[if IE
       ]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script
@@ -64,79 +69,114 @@
   </head>
 
   <body itemscope itemtype="http://schema.org/WebPage">
-    <main role="main">
-      <section class="hero is-success is-fullheight">
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
-          <header class="navbar">
-            <div class="container">
-              <div class="navbar-brand">
-                <a class="navbar-item">
-                  <img
-                    src="https://bulma.io/images/bulma-type-white.png"
-                    alt="Logo"
-                  />
-                </a>
-                <span
-                  class="navbar-burger burger"
-                  data-target="navbarMenuHeroC"
-                >
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
-              <div id="navbarMenuHeroC" class="navbar-menu">
-                <div class="navbar-end">
-                  <a class="navbar-item is-active">
-                    Home
-                  </a>
-                  <a class="navbar-item">
-                    Examples
-                  </a>
-                  <a class="navbar-item">
-                    Documentation
-                  </a>
-                  <span class="navbar-item">
-                    <a class="button is-success is-inverted">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Download</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </header>
-        </div>
-
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="title">
-              Title
+    <main role="main" class="parent">
+      <section id="home">
+        <div class="columns is-gapless">
+          <div class="column sectionData">
+            <h1 class="is-size-1 has-text-centered sectionNumber">
+              01
             </h1>
-            <h2 class="subtitle">
-              Subtitle
-            </h2>
+            <h1 class="is-size-1 is-uppercase has-text-centered sectionName">
+              home
+            </h1>
+            <hr class="is-size-1 has-text-centered divider" />
+            <p class="is-size-4 has-text-centered sectionText">
+              We at Bedrock Solutions add value and solve business problems
+              which optimize business and enhance profitability. We do a
+              complete diagnostics of your business process and finance to
+              identify the opportunity to optimize the business of our clients.
+            </p>
+            <br />
+            <p class="has-text-right readMoreText">
+              Read More
+              <i class="fas fa-arrow-right readMoreIcon"></i>
+            </p>
+          </div>
+          <div class="column">
+            <img src="./images/home.jpg" class="section_image" />
           </div>
         </div>
-
-        <!-- Hero footer: will stick at the bottom -->
-        <div class="hero-foot">
-          <nav class="tabs is-boxed is-fullwidth">
-            <div class="container">
-              <ul>
-                <li class="is-active"><a>Overview</a></li>
-                <li><a>Modifiers</a></li>
-                <li><a>Grid</a></li>
-                <li><a>Elements</a></li>
-                <li><a>Components</a></li>
-                <li><a>Layout</a></li>
-              </ul>
-            </div>
-          </nav>
+      </section>
+      <section id="aboutUs">
+        <div class="columns is-gapless">
+          <div class="column sectionData">
+            <h1 class="is-size-1 has-text-centered sectionNumber">
+              02
+            </h1>
+            <h1 class="is-size-1 is-uppercase has-text-centered sectionName">
+              about us
+            </h1>
+            <hr class="is-size-1 has-text-centered divider" />
+            <p class="is-size-4 has-text-centered sectionText">
+              The LadderUp is an accounting firm with highly qualified and
+              experienced Accountants, MBAs, CAs and CPAs. We help our clients
+              understand the story that their numbers are telling them, while
+              simplifying their businesses accounting, bookkeeping and payroll
+              needs.
+            </p>
+            <br />
+            <p class="has-text-right readMoreText">
+              Read More
+              <i class="fas fa-arrow-right readMoreIcon"></i>
+            </p>
+          </div>
+          <div class="column">
+            <img src="./images/aboutus.jpg" class="section_image" />
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="columns is-gapless">
+          <div class="column sectionData">
+            <h1 class="is-size-1 has-text-centered sectionNumber">
+              03
+            </h1>
+            <h1 class="is-size-1 is-uppercase has-text-centered sectionName">
+              services
+            </h1>
+            <hr class="is-size-1 has-text-centered divider" />
+            <p class="is-size-4 has-text-centered sectionText">
+              We delivers the most comprehensive, resourceful, and
+              cost-effective bookkeeping and accounting services for your
+              business with the help of a motivated team of seasoned accounting
+              managers and highly skilled accounts professionals.
+            </p>
+            <br />
+            <p class="has-text-right readMoreText">
+              Read More
+              <i class="fas fa-arrow-right readMoreIcon"></i>
+            </p>
+          </div>
+          <div class="column">
+            <img src="./images/services.jpg" class="section_image" />
+          </div>
+        </div>
+      </section>
+      <section id="sectors">
+        <div class="columns is-gapless">
+          <div class="column sectionData">
+            <h1 class="is-size-1 has-text-centered sectionNumber">
+              04
+            </h1>
+            <h1 class="is-size-1 is-uppercase has-text-centered sectionName">
+              sectors
+            </h1>
+            <hr class="is-size-1 has-text-centered divider" />
+            <p class="is-size-4 has-text-centered sectionText">
+              Our team of experiences CAs (CPAs) has successfully provided
+              services to various industry sectors. Our continuously increasing
+              knowledge and expertise of these industries advances our
+              development of industry specific tools, benchmarks and offerings.
+            </p>
+            <br />
+            <p class="has-text-right readMoreText">
+              Read More
+              <i class="fas fa-arrow-right readMoreIcon"></i>
+            </p>
+          </div>
+          <div class="column">
+            <img src="./images/sectors.jpg" class="section_image" />
+          </div>
         </div>
       </section>
     </main>

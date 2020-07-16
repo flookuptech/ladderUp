@@ -59,7 +59,7 @@ const CONFIG = {
     ]),
     new ImageminPlugin({
       disable: devMode,
-      test: /\.(jpe?g|png|gif|svg)$/i,
+      test: /\.(jpeg|png|gif|svg)$/i,
       optipng: { optimizationLevel: 3 },
       jpegtran: { progressive: true },
       gifsicle: { optimizationLevel: 1 },
@@ -97,7 +97,7 @@ const CONFIG = {
         ],
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
             loader: "file-loader",
