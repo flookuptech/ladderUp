@@ -1,4 +1,4 @@
-section {
+.menuSections {
   padding-top: 6vh;
   padding-bottom: 6vh;
 }
@@ -20,21 +20,21 @@ section {
   color: #12ac92;
   font-weight: bold;
   padding: 5px;
-  font-family: League Spartan;
+  font-family: "league_spartanbold";
 }
 
 .divider {
   color: white;
-  margin-left: 10px;
+  margin-left: 15px;
   font-weight: 900;
   padding: 2px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .sectionText {
   color: #816f62;
-  padding: 5px;
   font-family: "Vollkorn", serif;
+  padding: 10px;
 }
 
 .readMoreText {
