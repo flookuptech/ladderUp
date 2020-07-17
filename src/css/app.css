@@ -4,11 +4,27 @@ html,
 body {
   background-color: #e7f6fc;
 }
-/* html,
-body {
-  height: 100%;
-  line-height: 200%;
-} */
+
+#officeAddress,
+#sitemap {
+  background-color: rgba(18, 172, 146, 1);
+  border-radius: 15px;
+  padding-bottom: 25px;
+  margin-top: 6vh;
+}
+
+.officeAddressHeading {
+  color: white;
+  font-weight: bold;
+}
+
+.officeBranch {
+  color: white;
+}
+
+.emailPhoneDetails {
+  color: white;
+}
 
 /*
  *******************
