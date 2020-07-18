@@ -6,24 +6,35 @@ body {
 }
 
 #officeAddress,
-#sitemap {
+#sitemap,
+#contactUsForm {
   background-color: rgba(18, 172, 146, 1);
   border-radius: 15px;
   padding-bottom: 25px;
   margin-top: 6vh;
 }
 
-.officeAddressHeading {
+.contactUsFormSubmitButton {
+  color: rgba(18, 172, 146, 1) !important;
+  font-weight: bold;
+  width: 130px;
+}
+
+.footerHeading {
   color: white;
   font-weight: bold;
 }
 
-.officeBranch {
+.officeBranch,
+.emailPhoneDetails,
+.findUsOnMap,
+.officeAddressContactLink {
   color: white;
 }
 
-.emailPhoneDetails {
-  color: white;
+.officeAddressContactSection {
+  display: flex;
+  align-items: center;
 }
 
 /*
