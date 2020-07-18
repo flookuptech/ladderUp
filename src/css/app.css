@@ -37,6 +37,33 @@ body {
   align-items: center;
 }
 
+#feedback {
+  height: 0px;
+  width: 75px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 1000;
+  transform: rotate(270deg);
+}
+
+#feedback a {
+  display: flex;
+  background: #12ac92;
+  width: 175px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.emailPhoneDetails {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /*
  *******************
  *  MEDIA QUERIES  *
@@ -94,6 +121,10 @@ body {
   .title.is-1,
   .subtitle.is-2 {
     font-size: small;
+  }
+
+  .emailPhoneDetails {
+    display: block;
   }
 }
 
