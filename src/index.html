@@ -57,10 +57,24 @@
     />
     <link type="text/plain" rel="author" href="humans.txt" />
     <link rel="stylesheet" href="./css/app.css" />
+    <script src="/toggle.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap"
       rel="stylesheet"
     />
+    
+    <!-- Import Google Icon Font
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+    <!--Import materialize.css
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
+    
+    <!-- Import jQuery before materialize.js
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    
+    <!-- Compiled and minified JavaScript
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script> -->
+
 
     <!--[if IE
       ]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script
@@ -101,16 +115,16 @@
                   <div
                     class="navbar-end is-hidden-desktop is-hoverable has-dropdown"
                   >
-                    <a class="navbar-item is-active">
+                    <a class="navbar-item">
                       Home
                     </a>
-                    <a class="navbar-item is-active">
+                    <a class="navbar-item">
                       About Us
                     </a>
-                    <a class="navbar-item is-active">
+                    <a class="navbar-item">
                       Services
                     </a>
-                    <a class="navbar-item is-active">
+                    <a class="navbar-item">
                       Sectors
                     </a>
                   </div>
@@ -471,36 +485,39 @@
           </div>
         </footer>
         <footer class="footer" id="sitemap">
-          <div class="columns is-multiline is-mobile">
-            <div class="column is-half">
-              <p class="heading is-size-4">USEFUL LINKS</p>
-              <hr />
-              <div class="is-size-5">
-                <ul>
-                  <li><a href="#" alt="home">Home</a></li>
-                  <li><a href="#" alt="about">About us</a></li>
-                  <li><a href="#" alt="service">Services</a></li>
-                  <li><a href="#" alt="terms">Terms of Service</a></li>
-                  <li><a href="#" alt="privacy">Privacy Policy</a></li>
+          <div class="sitemapAndServices">
+            <div class="ft-main-item">
+              <h2 class="ft-title">USEFUL LINKS</h2>
+              <ul class="site-link">
+                <li><a href="#" alt="home">Home</a></li>
+                <li><a href="#" alt="about">About us</a></li>
+                <li><a href="#" alt="service">Services</a></li>
+                <li><a href="#" alt="terms">Terms of Service</a></li>
+                <li><a href="#" alt="privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">SERVICES</h2>
+                <ul class="site-link">
+                  <li><a href="#" alt="home">Financial Accounting</a></li>
+                  <li><a href="#" alt="home">Payroll Accounting</a></li>
+                  <li><a href="#" alt="home">CFO</a></li>
+                  <li><a href="#" alt="home">Virtual Assistant</a></li>
                 </ul>
               </div>
             </div>
-            <div class="column has-text-right">
-              <p class="heading is-size-4">OUR SERVICES</p>
-              <hr />
-              <div class="is-size-5">
-                <ul>
-                  <li>Financial Accounting</li>
-                  <li>Payroll Accounting</li>
-                  <li>CFO</li>
-                  <li>Virtual Assistant</li>
-                </ul>
-              </div>
-            </div>
+            <section class="ft-social">
+              <ul class="ft-social-list">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+              </ul>
+            </section>
           </div>
         </footer>
       </div>
-      <br />
     </main>
   </body>
   <script type="text/javascript" src="../build/app.js"></script>

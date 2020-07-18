@@ -249,3 +249,46 @@ body {
   font-weight: 1000;
   padding: 1rem;
 }
+
+.site-link {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#sitemap a {
+  text-decoration: none;
+  color: #eee;
+}
+
+#sitemap a:hover {
+  text-decoration: underline;
+}
+
+.ft-title {
+  color: #fff;
+  font-size: 1.375rem;
+  text-decoration: underline;
+  padding-bottom: 0.25rem;
+}
+
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px white solid;
+  padding-top: 1.25rem;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.55rem;
+}
+
+.sitemapAndServices {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+}
