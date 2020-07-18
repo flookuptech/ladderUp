@@ -75,71 +75,111 @@
             <div class="container">
               <div class="navbar-brand">
                 <a class="navbar-item">
-                  <img
+                  <img class="logo"
                     style="
-                      max-height: 100px;
-                      max-width: 100px;
+                      max-height: 130px;
+                      max-width: 130px;
                       height: auto;
                       width: auto;
+                      
                     "
                     src="../images/logo/ladderup.png"
                     alt="LadderUp"
                   />
                 </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+              </span>
+            </div>
+            <div id="content-mobile">
+            <div id="navbarMenuHeroC" class="navbar-menu">
+              <div class="navbar-end is-hidden-desktop is-hoverable has-dropdown">
+                <a class="navbar-item is-active">
+                  Home
+                </a>
+                <a class="navbar-item is-active">
+                  About Us
+                </a>
+                <a class="navbar-item is-active">
+                  Services
+                </a>
+                <a class="navbar-item is-active">
+                  Sectors
+                </a>
+                </span>
               </div>
             </div>
-          </nav>
+          </div>
         </div>
+      </div>
+    </nav>
+  </div>
+
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+          rel="stylesheet"
+        />
+
         <div class="hero-body">
           <div class="container">
+            
             <div
               class="columns is-multiline is-mobile is-centered is-vcentered is-gapless"
             >
               <div class="column">
                 <div class="container is-flex is-horizontal-center">
-                  <figure class="image is-480x480">
-                    <img
-                      style="max-height: 400px; max-width: 400px;"
-                      class="is-rounded"
-                      src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                      alt="Centre Circle"
-                    />
-                  </figure>
-                  <div class="column is-one-third is-overlay has-text-right">
-                    <div class="column has-text-centered">
-                      <div class="circle"></div>
-                      <h1 class="title"><a href="#" alt="Home">home</a></h1>
-                      <h1 class="title">
-                        <a href="#" alt="About Us">about us</a>
+                  <!-- <figure class="image is-480x480"> -->
+                    <div class="secondImage">
+                      
+                      <img class="image is-480x480 is-rounded"
+                        style="max-height: 400px; max-width: 400px;"
+                        src="../images/circle1.png"
+                        alt="Centre Circle"
+                      />
+                      <p>
+                        <div id="content-desktop">
+                        <div class="column is-one-third is-overlay has-text-right">
+                          <div class="column is-primary">
+                            <h1 class="title is-1">
+                              <a href="#" alt="Home" style="color: #816f62;">home</a>
+                            </h1>
+                            <h1 class="title is-1">
+                              <a href="#" alt="About Us" style="color: #816f62;">about us</a>
+                            </h1>
+                            <h1 class="title is-1">
+                              <a href="#" alt="Services" style="color: #816f62;">services</a>
+                            </h1>
+                            <h1 class="title is-1">
+                              <a href="#" alt="Sectors" style="color: #816f62;">sectors</a>
+                            </h1>
+                          </div>
+                        </div>
+                        </div>
+                      </p>
+                    </div>
+                    
+                  </div>
+                
+
+                  <div class="columns is-vcentered is-overlay">
+                    <div class="column is-6 is-offset-1">
+                      <h1 class="title is-1">
+                        The LadderUp
                       </h1>
-                      <h1 class="title">
-                        <a href="#" alt="Services">services</a>
-                      </h1>
-                      <h1 class="title">
-                        <a href="#" alt="Sectors">sectors</a>
-                      </h1>
+                      <h2 class="subtitle is-2">
+                        YOUR OFFSHORE PARTNER
+                      </h2>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <section class="section">
-              <div class="container">
-                <div class="columns">
-                  <div class="column is-6">The LadderUp</div>
-                </div>
-              </div>
-            </section>
+            
           </div>
-          <!-- <div class="column is-pulled-right">
-            <h1 class="blog-title">
-              The LadderUp
-            </h1>
-            <h2 class="blog-summary">
-              YOUR OFFSHORE PARTNER
-            </h2>
-            <br /> 
-          </div>-->
+          
         </div>
       </section>
       <div class="container">
@@ -309,9 +349,43 @@
           </p>
         </footer>
         <br /><br />
+
+
         <footer class="footer" id="sitemap">
-          <!-- Enter Site Map code here -->
+          <div class="columns is-multiline is-mobile">
+            <div class="column is-half">
+              <p class="heading is-size-4">USEFUL LINKS</p>
+              <hr>
+              <div class="is-size-5">
+                <p>
+                  <ul>
+                    <li><a href="#" alt="home">Home</a></li>
+                    <li><a href="#" alt="about">About us</a></li>
+                    <li><a href="#" alt="service">Services</a></li>
+                    <li><a href="#" alt="terms">Terms of Service</a></li>
+                    <li><a href="#" alt="privacy">Privacy Policy</a></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            
+            <div class="column has-text-right">
+              <p class="heading is-size-4">OUR SERVICES</p>
+              <hr>
+              <div class="is-size-5">
+                <p>
+                  <ul>
+                    <li>Financial Accounting</li>
+                    <li>Payroll Accounting</li>
+                    <li>CFO</li>
+                    <li>Virtual Assistant</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
         </footer>
+
       </div>
       <br />
     </main>
