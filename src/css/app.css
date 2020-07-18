@@ -250,6 +250,11 @@ body {
   padding: 1rem;
 }
 
+.sitemapAndServices {
+  display: flex;
+  flex-direction: column;
+}
+
 .site-link {
   list-style: none;
   padding-left: 0;
@@ -262,19 +267,22 @@ body {
 }
 
 #sitemap a:hover {
-  text-decoration: underline;
+  transform: scale(2);
+  font-weight: 700;
+  color: aquamarine;
 }
 
 .ft-title {
   color: #fff;
+  font-weight: bold;
   font-size: 1.375rem;
-  text-decoration: underline;
   padding-bottom: 0.25rem;
 }
 
 .ft-social {
   padding: 0 1.875rem 1.25rem;
 }
+
 .ft-social-list {
   display: flex;
   justify-content: flex-end;
@@ -284,11 +292,4 @@ body {
 .ft-social-list li {
   margin: 0.5rem;
   font-size: 1.55rem;
-}
-
-.sitemapAndServices {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  justify-items: center;
 }
