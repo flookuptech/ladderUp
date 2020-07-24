@@ -12,7 +12,6 @@
 }
 
 .circleBackgroundOnHome {
-  background-size: contain;
   background: url("../images/home.jpg");
 }
 
@@ -35,6 +34,9 @@
   -moz-border-radius: 25px;
   border-radius: 50%;
   background-color: white;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .centrePart {
