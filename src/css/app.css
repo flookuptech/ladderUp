@@ -130,12 +130,12 @@ body {
 
   h1.sectionOne {
     line-height: 4.3rem;
-    display: inline-flex;
-    justify-content: center;
-    text-align: center;
+    /* display: inline-flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
     font-size: 5rem;
     margin-top: -2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     margin-left: 1rem;
   }
 
@@ -170,6 +170,36 @@ body {
   h1.catservSecsix {
     text-align: center;
   }
+
+  h1.sectionOne {
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+    /* border-bottom: 100vh solid white; */
+  }
+
+  /* hr.divider {
+    display: block !important;
+    width: 100px !important;
+  } */
+
+  h1.sectionOne:after {
+    content: "";
+    display: block;
+    margin-top: -1.5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    border-bottom: 3px solid white;
+  }
+
+  /* .divider {
+    display: block !important;
+    margin-end: auto !important;
+    margin-start: auto !important;
+    border: 1px inset !important;
+    overflow: hidden !important;
+    margin-before: 0.5em !important;
+    margin-after: 0.5em !important;
+  } */
 }
 
 /* MEDIA FOR MEDIUM MOBILE DISPLAY */
@@ -288,7 +318,7 @@ h1.aboutNumber {
 .aboutImage,
 .homeImage {
   max-width: 1800px;
-  margin-top: -9.8rem;
+  margin-top: -10.4rem;
 }
 
 .accContent,
@@ -423,6 +453,10 @@ h1.aboutNumber {
   color: #12ac92;
   font-weight: 400;
   margin-top: 3.7rem;
+}
+
+.divider {
+  display: none;
 }
 
 /*=======FOR THE BACKGROUND=======*/
