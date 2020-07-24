@@ -163,6 +163,27 @@ span.navbar-burger {
     padding: 15px;
     font-size: 3rem;
   }
+
+  /* h1.sectionOne {
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 100vh solid white;
+  } */
+
+  /* .divider {
+    display: block !important;
+    width: 100vw !important;
+  } */
+
+  /* .divider {
+    display: block !important;
+    margin-end: auto !important;
+    margin-start: auto !important;
+    border: 1px inset !important;
+    overflow: hidden !important;
+    margin-before: 0.5em !important;
+    margin-after: 0.5em !important;
+  } */
 }
 
 /* MEDIA FOR MEDIUM MOBILE DISPLAY */
