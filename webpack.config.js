@@ -28,6 +28,42 @@ const CONFIG = {
         removeComments: true,
       },
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/home.html",
+      filename: "./pages/home.html",
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/aboutUs.html",
+      filename: "./pages/aboutUs.html",
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/services.html",
+      filename: "./pages/services.html",
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/sectors.html",
+      filename: "./pages/sectors.html",
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true,
+      },
+    }),
     new HtmlReplaceWebpackPlugin([
       {
         pattern:
@@ -46,17 +82,6 @@ const CONFIG = {
     new OptimizeCssAssetsPlugin({
       cssProcessorOptions: { discardComments: { removeAll: true } },
     }),
-    new CopyWebpackPlugin([
-      {
-        from: "src/images/",
-        to: "images/",
-      },
-      {
-        from: "src/*.txt",
-        to: "./[name].[ext]",
-        toType: "template",
-      },
-    ]),
     new ImageminPlugin({
       disable: devMode,
       test: /\.(jpeg|png|gif|svg)$/i,

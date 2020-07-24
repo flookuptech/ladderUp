@@ -1,18 +1,12 @@
 @import "./sections.css";
+@import "./landingPage.css";
 
 html,
 body {
   background-color: #e7f6fc;
 }
 
-*:not(.textWrap),
-:after:not(.textWrap),
-:before:not(.textWrap) {
-  box-sizing: border-box;
-}
-
 #officeAddress,
-#sitemap,
 #contactUsForm {
   background-color: rgba(18, 172, 146, 1);
   border-radius: 15px;
@@ -24,6 +18,13 @@ body {
   color: rgba(18, 172, 146, 1) !important;
   font-weight: bold;
   width: 130px;
+}
+
+.officeBranch,
+.emailPhoneDetails,
+.findUsOnMap,
+.emailPhoneLinks {
+  color: white;
 }
 
 .footerHeading {
@@ -43,8 +44,8 @@ body {
   align-items: center;
 }
 
-#feedback {
-  height: 0px;
+#contactDivOnRight.show {
+  height: 15px;
   width: 75px;
   position: fixed;
   right: 0;
@@ -53,13 +54,13 @@ body {
   transform: rotate(270deg);
 }
 
-#feedback a {
+#contactDivOnRight a {
   display: flex;
-  background: #12ac92;
+  background: rgba(18, 172, 146, 0.8);
   width: 175px;
   align-items: center;
   justify-content: center;
-  padding: 8px 15px;
+  padding: 10px 15px;
   color: #fff;
   font-size: 17px;
   font-weight: bold;
@@ -70,6 +71,34 @@ body {
   justify-content: space-evenly;
 }
 
+#bottomNav {
+  height: 10vh;
+  width: 50vw;
+  left: 25vw;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.74;
+  z-index: 1000;
+  display: none;
+}
+
+#bottomNav.show {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.findUsOnMapIcon {
+  color: red;
+}
+
+.navbarForPages {
+  background-color: #073450 !important;
+  height: auto;
+  max-height: 14vh;
+}
+
 /*
  *******************
  *  MEDIA QUERIES  *
@@ -78,37 +107,25 @@ body {
 
 /* EXTRA LARGE DISPLAY */
 
-@media only screen and (max-width: 2400px) and (min-width: 1500px) {
+@media only screen and (max-width: 2400px) and (min-width: 1501px) {
 }
 
 /* MEDIA FOR NOTEBOOK DISPLAY */
 
-@media only screen and (max-width: 1200px) and (min-width: 300px) {
+@media only screen and (max-width: 1500px) and (min-width: 1221px) {
+}
+
+/* MEDIA FOR NOTEBOOK DISPLAY */
+
+@media only screen and (max-width: 1220px) and (min-width: 300px) {
 }
 
 /* MEDIA FOR TABLET DISPLAY */
 
 @media only screen and (max-width: 992px) and (min-width: 300px) {
-  #content-mobile {
-    display: block;
-  }
-
-  .secondImage {
-    display: none;
-  }
-
-  #content-desktop {
-    display: none;
-  }
-
-  h1.tagLine-head {
-    font-size: 3rem;
-    font-weight: 200;
-  }
-
-  h1.tagLine-content {
-    font-size: 3rem;
-    font-weight: 200;
+  #officeAddress,
+  #contactUsForm {
+    border-radius: 0px;
   }
 
   h1.sectionOne {
@@ -158,48 +175,18 @@ body {
 /* MEDIA FOR MEDIUM MOBILE DISPLAY */
 
 @media only screen and (max-width: 768px) and (min-width: 300px) {
-  #content-mobile {
-    display: block;
-  }
-
-  .secondImage {
-    display: none;
-  }
-
-  #content-desktop {
-    display: none;
-  }
-
-  .tagLine-head,
-  .tagLine-content {
-    font-size: small;
-  }
-
   .emailPhoneDetails {
     display: block;
+  }
+  #bottomNav {
+    width: 100vw;
+    left: 0;
   }
 }
 
 /* MEDIA FOR LITTLE MOBILE DISPLAY */
 
 @media only screen and (max-width: 480px) and (min-width: 300px) {
-  #content-mobile {
-    display: block;
-  }
-
-  .secondImage {
-    display: none;
-  }
-
-  #content-desktop {
-    display: none;
-  }
-
-  .tagLine-head,
-  .tagLine-content {
-    display: grid;
-    place-items: center;
-  }
 }
 
 /*
@@ -253,128 +240,6 @@ body {
   h3 {
     page-break-after: avoid;
   }
-}
-
-.centrePart {
-  /* padding: 0.5em 2em;
-  margin: 0 auto 1em auto;
-  max-width: 30em; */
-  overflow: hidden;
-}
-
-.centrePart figure,
-.centrePart.textWrap div {
-  shape-margin: 1rem;
-  background: white;
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-  shape-outside: circle();
-}
-
-.textWrap h1 {
-  display: flex;
-  align-content: flex-end;
-  justify-content: flex-end;
-  /* margin-left: 14rem; */
-}
-
-/* .centrePart h1.categories {
-  text-align: right;
-} */
-
-h1.categories {
-  text-align: right;
-  height: 4rem;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.main-title {
-  text-align: right;
-  font-size: 2.1em;
-}
-
-.centrePart {
-  justify-content: center;
-}
-
-.columns.centreCircletext {
-  justify-content: flex-end;
-}
-
-h1.tagLine-head {
-  color: #816f62;
-  font-weight: 800;
-  font-size: 3rem;
-  line-height: 1.4;
-  padding-left: 0.7rem;
-}
-
-h1.tagLine-content {
-  background-color: #12ac92;
-  opacity: 0.5;
-  color: white;
-  line-height: 3.4rem;
-  font-weight: 1000;
-  font-size: 2.4rem;
-  padding-left: 1rem;
-}
-
-.circleText h1,
-h2 {
-  font-family: "Open Sans", sans-serif;
-  text-align: left;
-  font-weight: 1000;
-  padding: -1rem;
-}
-
-span.navbar-burger {
-  height: 8.3rem;
-}
-
-.sitemapAndServices {
-  display: flex;
-  flex-direction: column;
-}
-
-.site-link {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-#sitemap a {
-  text-decoration: none;
-  color: #eee;
-}
-
-#sitemap a:hover {
-  transform: scale(2);
-  font-weight: 700;
-  color: aquamarine;
-}
-
-.ft-title {
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.375rem;
-  padding-bottom: 0.25rem;
-}
-
-.ft-social {
-  padding: 0 1.875rem 1.25rem;
-}
-
-.ft-social-list {
-  display: flex;
-  justify-content: flex-end;
-  border-top: 1px white solid;
-  padding-top: 1.25rem;
-}
-.ft-social-list li {
-  margin: 0.5rem;
-  font-size: 1.55rem;
 }
 
 .sectionOne {
