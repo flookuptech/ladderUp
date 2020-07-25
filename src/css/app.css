@@ -181,6 +181,11 @@ body {
     width: 100%;
     border-bottom: 3px solid white;
   }
+
+  ul.social-icons {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 /* MEDIA FOR MEDIUM MOBILE DISPLAY */
@@ -582,7 +587,6 @@ hr.footer-divider {
 }
 .social-icons a {
   width: 60px;
-
   margin-left: 6px;
   margin-right: 0;
   border-radius: 100%;
@@ -621,7 +625,7 @@ hr.footer-divider {
   font-size: 13px;
 }
 .social-icons a {
-  background-color: black;
+  background-color: white;
   color: #818a91;
   font-size: 16px;
   display: inline-block;
@@ -638,7 +642,7 @@ hr.footer-divider {
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-  background-color: rgb(255, 255, 252);
+  background-color: cyan;
 }
 .social-icons.size-sm a {
   line-height: 34px;
@@ -657,13 +661,27 @@ hr.footer-divider {
 
 /*=======MENU BUTTON BACKGROUND=======*/
 
-.navbar-burger {
-  background-color: white;
-}
-
 a.navbar-item {
   text-align: center;
+  background-color: white;
   color: teal;
   font-size: 25px;
   font-weight: 600;
 }
+
+/*=======FOOTER STYLING=======*/
+
+.officeBranch {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.officeBranchAddress {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: brown;
+}
+
+/* ul.social-icons {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+} */
