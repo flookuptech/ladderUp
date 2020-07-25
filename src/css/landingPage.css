@@ -79,6 +79,17 @@ span.navbar-burger {
   height: auto;
 }
 
+.contactform-messages {
+  display: none;
+}
+.contactform-messages.active {
+  display: block;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 /*
    *******************
    *  MEDIA QUERIES  *
