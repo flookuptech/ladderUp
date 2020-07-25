@@ -601,84 +601,82 @@ hr.footer-divider {
   border-top-color: #bbb;
 }
 
-.social-icons {
-  text-align: right;
-}
-.social-icons a {
-  width: 60px;
-  margin-left: 6px;
-  margin-right: 0;
-  border-radius: 100%;
-  background-color: #33353d;
-}
-
-@media (max-width: 991px) {
-  .site-footer [class^="col-"] {
-    margin-bottom: 30px;
-  }
-}
 @media (max-width: 767px) {
-  .site-footer {
-    padding-bottom: 0;
-  }
-  .site-footer .copyright-text,
-  .site-footer .social-icons {
+  .social-icons {
     text-align: center;
   }
+
+  ul.social-icons {
+    margin-top: 1rem;
+  }
 }
-.social-icons {
-  padding-left: 0;
+
+/* .social-icons {
+  padding-left: 0; 
   margin-bottom: 0;
-  margin-top: 1.5rem;
+  margin-top: 1.5rem; 
   list-style: none;
+  text-align: right;
 }
 .social-icons li {
   display: inline-block;
   margin-bottom: 4px;
 }
-.social-icons li.title {
-  margin-right: 15px;
-  text-transform: uppercase;
-  color: #96a2b2;
-  font-weight: 700;
-  font-size: 13px;
-}
+
 .social-icons a {
-  background-color: white;
-  color: #818a91;
-  font-size: 16px;
   display: inline-block;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
   text-align: center;
+  line-height: 44px;
   margin-right: 8px;
   border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  font-size: 16px;
+  background-color: white;
+  color: #12ac92;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.social-icons a:active,
-.social-icons a:focus,
+
 .social-icons a:hover {
-  background-color: cyan;
-}
-.social-icons.size-sm a {
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
-  font-size: 14px;
+  background-color: #12ac92 !important;
+  color: white !important;
+} */
+
+.socialMediaIcons a {
+  color: #12ac92;
 }
 
-@media (max-width: 767px) {
-  .social-icons li.title {
-    display: block;
-    margin-right: 0;
-    font-weight: 600;
-  }
+.socialMediaIcons ul li {
+  background: rgba(255, 255, 255, 1);
+
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 44px;
+  margin-right: 8px;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  font-size: 16px;
+
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.socialMediaIcons ul li:hover {
+  background: rgba(18, 172, 146, 0.8);
+}
+
+.socialMediaIcons ul li:hover a {
+  color: white;
 }
 
 /*=======MENU BUTTON BACKGROUND=======*/
+
 a.hamburgerMenuItem {
   text-align: center;
   background-color: white;
