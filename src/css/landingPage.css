@@ -49,18 +49,18 @@
 
 .title.brandName {
   color: #816f62;
+  font-weight: 1000;
   font-size: 3rem;
   line-height: 1.4;
   padding-left: 0.7rem;
 }
 
 .subtitle.tagline {
-  background-color: #12ac92;
-  opacity: 0.5;
+  background-color: rgba(18, 172, 146, 0.5);
   color: white;
+  font-size: 2.2rem !important;
   line-height: 3.4rem;
   font-weight: 1000;
-  font-size: 2.4rem;
   padding-left: 1rem;
 }
 
@@ -168,11 +168,13 @@ span.navbar-burger {
   }
   .title.brandName {
     font-size: 3rem;
+    font-weight: bold;
   }
 
   .subtitle.tagline {
     padding: 15px;
-    font-size: 3rem;
+    font-weight: 1000;
+    font-size: 2rem;
   }
 
   /* h1.sectionOne {

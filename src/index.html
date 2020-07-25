@@ -6,7 +6,7 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Ladderup</title>
+    <title>The Ladderup</title>
 
     <meta name="author" content="" />
     <meta name="keywords" content="" />
@@ -80,7 +80,7 @@
   <body itemscope itemtype="http://schema.org/WebPage">
     <main role="main" class="parent">
       <section class="hero is-fullheight">
-        <!--Desktop Landing Page-->
+        <!--Desktop Landing Page Start-->
         <div class="area is-overlay">
           <ul class="circles">
             <li></li>
@@ -125,12 +125,12 @@
                 <div class="columns is-vcentered is-overlay centreCircletext">
                   <div class="column is-6 is-offset-1 circleText">
                     <header id="showcase">
-                      <h1 class="title brandName">
+                      <h1 class="title is-size-1 brandName">
                         The LadderUp
                       </h1>
                     </header>
                     <div id="content">
-                      <h1 class="subtitle tagline">
+                      <h1 class="subtitle is-size-3 tagline">
                         YOUR OFFSHORE PARTNER
                       </h1>
                     </div>
@@ -188,7 +188,8 @@
             </div>
           </div>
         </div>
-        <!--Mobile Landing Page-->
+        <!--Desktop Landing Page End-->
+        <!--Mobile Landing Page Start-->
         <div id="mobileLandingPage">
           <div class="hero-head">
             <nav class="navbar">
@@ -255,13 +256,15 @@
           </div>
         </div>
       </section>
-      <!--Fixed Contact Div on right -->
-      <div id="contactDivOnRight">
+      <!--Mobile Landing Page End-->
+      <!--Fixed Contact Div on right Start -->
+      <div id="contactDivOnRight" class="show">
         <a href="#contactUsForm"
           >CONTACT US &nbsp;&nbsp;<i class="fas fa-phone"></i
         ></a>
       </div>
-      <!--Fixed Nav at bottom-->
+      <!--End of Fixed contact div on right-->
+      <!--Fixed Nav at bottom Start-->
       <div id="bottomNav">
         <a href="#homeSection" style="color: white; font-weight: bold;">Home</a>
         <a href="#aboutUsSection" style="color: white; font-weight: bold;"
@@ -274,7 +277,8 @@
           >Sectors</a
         >
       </div>
-      <!--Home, About Us, Services, Sectors sections-->
+      <!--End of Fixed Nav at bottom-->
+      <!-- Start of Home, About Us, Services, Sectors sections-->
       <section id="homeSection" class="menuSections" style="padding-top: 0vh;">
         <div class="columns is-gapless">
           <div class="column sectionData">
@@ -440,19 +444,14 @@
           </div>
         </div>
       </section>
-      <!--Contact us form-->
+      <!--End of Home, About us, Services, Sectors -->
+      <!--Contact us form Start-->
       <div class="container">
         <footer class="footer" id="contactUsForm">
           <p class="has-text-centered is-size-2 footerHeading">
             Write to us
           </p>
           <br />
-          <!-- <form
-            id="contactForm"
-            name="contactForm"
-            method="POST"
-            action="https://script.google.com/macros/s/AKfycbzBE7CR8tjGtiFu7bPEytGZAj_9iHkBvmYCGd2LLMvjZYIiWBr5/exec"
-          > -->
           <form id="contactForm" name="contactForm">
             <div class="field is-horizontal">
               <div class="field-body">
@@ -544,7 +543,8 @@
             Thank you for reaching out to us. We'll get back to you shortly!
           </div>
         </footer>
-        <!--Get in touch with us footer-->
+        <!--Contact us Form End-->
+        <!--Get in touch with us footer Start-->
         <footer class="footer" id="officeAddress">
           <p class="has-text-centered is-size-2 footerHeading">
             Get in Touch with us
@@ -659,6 +659,7 @@
             </div>
           </div>
         </footer>
+        <!--Get in touch with us footer End-->
         <br /><br />
       </div>
     </main>
@@ -686,6 +687,7 @@
   ></script>
   <script>
     $(document).ready(function () {
+      //Start of contact form script
       $("#contactForm").on("submit", function (event) {
         event.preventDefault(); // to prevent default page reloading
         $("#contactUsSubmitButton").addClass("button is-danger is-loading");
@@ -711,7 +713,9 @@
           },
         });
       });
+      //End of Contact form submission script
 
+      //Start of bottom nav script
       var topOfOthDiv = 600; //set manually for example
       $(window).scroll(function () {
         if ($(window).scrollTop() > topOfOthDiv) {
@@ -720,7 +724,9 @@
           $("#bottomNav").removeClass("show"); //reached the desired point -- hide div
         }
       });
+      //End of Bottom nav script
 
+      //Start of script for contact button on right
       var contactUsTop = 3000; //set manually for example
       $(window).scroll(function () {
         if ($(window).scrollTop() < contactUsTop) {
@@ -729,7 +735,9 @@
           $("#contactDivOnRight").removeClass("show"); //reached the desired point -- hide div
         }
       });
+      //End of script for contact button on right
 
+      //Start of hover functions for Desktop navigation Buttons
       $("#homeDesktopNav").mouseover(function () {
         $("#circle").addClass("circleBackgroundOnHome");
       });
@@ -757,6 +765,7 @@
       $("#sectorsDesktopNav").mouseout(function () {
         $("#circle").removeClass("circleBackgroundOnSectors");
       });
+      //End of hover functions for Desktop Navigations
     });
   </script>
 </html>
