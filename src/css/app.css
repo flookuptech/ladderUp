@@ -130,9 +130,6 @@ body {
 
   h1.sectionOne {
     line-height: 4.3rem;
-    /* display: inline-flex; */
-    /* justify-content: center; */
-    /* text-align: center; */
     font-size: 5rem;
     margin-top: -2rem;
     margin-bottom: 6rem;
@@ -174,13 +171,7 @@ body {
   h1.sectionOne {
     padding-top: 5rem;
     padding-bottom: 0.5rem;
-    /* border-bottom: 100vh solid white; */
   }
-
-  /* hr.divider {
-    display: block !important;
-    width: 100px !important;
-  } */
 
   h1.sectionOne:after {
     content: "";
@@ -190,16 +181,6 @@ body {
     width: 100%;
     border-bottom: 3px solid white;
   }
-
-  /* .divider {
-    display: block !important;
-    margin-end: auto !important;
-    margin-start: auto !important;
-    border: 1px inset !important;
-    overflow: hidden !important;
-    margin-before: 0.5em !important;
-    margin-after: 0.5em !important;
-  } */
 }
 
 /* MEDIA FOR MEDIUM MOBILE DISPLAY */

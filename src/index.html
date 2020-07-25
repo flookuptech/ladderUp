@@ -307,12 +307,6 @@
                 </div>
               </div>
             </a>
-            <!-- <a href="./pages/home.html">
-              <div class="has-text-right readMoreText">
-                Read More
-                <i class="fas fa-arrow-right readMoreIcon"></i>
-              </div>
-            </a> -->
           </div>
           <div class="column">
             <img src="./images/home.jpg" loading="lazy" class="section_image" />
@@ -352,12 +346,6 @@
                 </div>
               </div>
             </a>
-            <!-- <a href="./pages/aboutUs.html">
-              <div class="has-text-right readMoreText">
-                Read More
-                <i class="fas fa-arrow-right readMoreIcon"></i>
-              </div>
-            </a> -->
           </div>
           <div class="column">
             <img
@@ -400,12 +388,6 @@
                 </div>
               </div>
             </a>
-            <!-- <a href="./pages/services.html">
-              <div class="has-text-right readMoreText">
-                Read More
-                <i class="fas fa-arrow-right readMoreIcon"></i>
-              </div>
-            </a> -->
           </div>
           <div class="column">
             <img
@@ -448,12 +430,6 @@
                 </div>
               </div>
             </a>
-            <!-- <a href="./pages/sectors.html">
-              <div class="has-text-right readMoreText">
-                Read More
-                <i class="fas fa-arrow-right readMoreIcon"></i>
-              </div>
-            </a> -->
           </div>
           <div class="column">
             <img
@@ -471,77 +447,102 @@
             Write to us
           </p>
           <br />
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <p class="control is-expanded has-icons-left">
-                  <input
-                    class="input is-medium"
-                    type="text"
-                    placeholder="Name"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="field">
-                <p class="control is-expanded has-icons-left">
-                  <input
-                    class="input is-medium"
-                    type="text"
-                    placeholder="Organiztion Name"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-building"></i>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <p class="control is-expanded has-icons-left">
-                  <input
-                    class="input is-medium"
-                    type="email"
-                    placeholder="Email ID"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="field">
-                <p class="control is-expanded has-icons-left">
-                  <input
-                    class="input is-medium"
-                    type="tel"
-                    placeholder="Contact No"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-phone"></i>
-                  </span>
-                </p>
+          <!-- <form
+            id="contactForm"
+            name="contactForm"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbzBE7CR8tjGtiFu7bPEytGZAj_9iHkBvmYCGd2LLMvjZYIiWBr5/exec"
+          > -->
+          <form id="contactForm" name="contactForm">
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <p class="control is-expanded has-icons-left">
+                    <input
+                      class="input is-medium"
+                      type="text"
+                      name="Name"
+                      placeholder="Name"
+                      required
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <p class="control is-expanded has-icons-left">
+                    <input
+                      class="input is-medium"
+                      type="text"
+                      name="Organization Name"
+                      placeholder="Organiztion Name"
+                      required
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-building"></i>
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <textarea
-                class="textarea is-medium"
-                placeholder="Write your message here"
-              ></textarea>
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <p class="control is-expanded has-icons-left">
+                    <input
+                      class="input is-medium"
+                      type="email"
+                      name="Email"
+                      placeholder="Email ID"
+                      required
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <p class="control is-expanded has-icons-left">
+                    <input
+                      name="Contact"
+                      class="input is-medium"
+                      type="tel"
+                      placeholder="Contact No"
+                      required
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-phone"></i>
+                    </span>
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="field">
+              <div class="control">
+                <textarea
+                  name="Message"
+                  class="textarea is-medium"
+                  placeholder="Write your message here"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <br />
+            <button
+              id="contactUsSubmitButton"
+              class="button is-medium contactUsFormSubmitButton"
+              type="submit"
+            >
+              <span class="icon">
+                <i class="fas fa-paper-plane"></i>
+              </span>
+              <span>Send</span>
+            </button>
+          </form>
+          <div class="contactform-messages">
+            Thank you for reaching out to us. We'll get back to you shortly!
           </div>
-          <br />
-          <button class="button is-medium contactUsFormSubmitButton">
-            <span class="icon">
-              <i class="fas fa-paper-plane"></i>
-            </span>
-            <span>Send</span>
-          </button>
         </footer>
         <!--Get in touch with us footer-->
         <footer class="footer" id="officeAddress">
@@ -657,74 +658,25 @@
               </div>
             </div>
           </div>
-          <!-- <div class="columns is-size-5 has-text-centered">
-            <div class="column emailPhoneDetails">
-              <i class="fas fa-envelope"> </i>
-              Email: &nbsp;
-              <a href="mailto: info@theladderup.com" class="emailPhoneLinks">
-                info@theladderup.com
-              </a>
-            </div>
-            <div class="column emailPhoneDetails">
-              <i class="fas fa-phone"> </i>
-              Phone No: &nbsp;
-              <a href="mailto: info@theladderup.com" class="emailPhoneLinks">
-                +919826955855
-              </a>
-            </div>
-          </div> -->
         </footer>
         <br /><br />
-        <!-- <footer class="footer" id="sitemap">
-          <div class="sitemapAndServices">
-            <div class="columns is-vcentered">
-              <div class="column has-text-left">
-                <div class="ft-main-item">
-                  <h2 class="ft-title">USEFUL LINKS</h2>
-                  <ul class="site-link">
-                    <li><a href="#" alt="home">Home</a></li>
-                    <li><a href="#" alt="about">About us</a></li>
-                    <li><a href="#" alt="service">Services</a></li>
-                    <li><a href="#" alt="terms">Terms of Service</a></li>
-                    <li><a href="#" alt="privacy">Privacy Policy</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="column has-text-right">
-                <div class="ft-main-item">
-                  <h2 class="ft-title">SERVICES</h2>
-                  <ul class="service" style="color: white;">
-                    <li>Financial Accounting</li>
-                    <li>Payroll Accounting</li>
-                    <li>CFO</li>
-                    <li>Virtual Assistant</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <section class="ft-social">
-              <ul class="ft-social-list">
-                <li>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-skype"></i></a>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </footer> -->
       </div>
     </main>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5f1c18305e51983a11f5c825/default";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
   <script type="text/javascript" src="../build/app.js"></script>
   <script
@@ -734,6 +686,32 @@
   ></script>
   <script>
     $(document).ready(function () {
+      $("#contactForm").on("submit", function (event) {
+        event.preventDefault(); // to prevent default page reloading
+        $("#contactUsSubmitButton").addClass("button is-danger is-loading");
+        var dataString = $(this).serialize(); // to get the form data
+        $.ajax({
+          type: "POST",
+          url:
+            "https://script.google.com/macros/s/AKfycbzOmZKth5QFOIrptL2f-Y8GP7Z762ONOCwzmge46swAig0xZ1E/exec",
+          data: dataString,
+          success: function (data) {
+            $("#contactUsSubmitButton").removeClass(
+              "button is-danger is-loading"
+            );
+            $("#contactUsSubmitButton").addClass(
+              "button is-medium",
+              "conatactUsFormSubmitButton"
+            );
+            $("#contactForm")[0].reset(); // to reset form data
+            $(".contactform-messages").fadeIn().addClass("active");
+            setTimeout(function () {
+              $(".contactform-messages").fadeOut("slow");
+            }, 5000);
+          },
+        });
+      });
+
       var topOfOthDiv = 600; //set manually for example
       $(window).scroll(function () {
         if ($(window).scrollTop() > topOfOthDiv) {
