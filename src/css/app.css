@@ -95,8 +95,6 @@ body {
 
 .navbarForPages {
   background-color: #073450 !important;
-  height: auto;
-  max-height: 14vh;
 }
 
 .button.backToIndex {
@@ -116,6 +114,11 @@ body {
   color: white;
   font-weight: bold;
   border: none;
+}
+
+.logoForPages {
+  height: 15rem;
+  width: 5rem;
 }
 
 /*
