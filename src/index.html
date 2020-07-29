@@ -111,7 +111,7 @@
                         height: auto;
                         width: auto;
                       "
-                      src="../images/logo/ladderup.png"
+                      src="../images/logo/ladderup.gif"
                       alt="The LadderUp"
                     />
                   </a>
@@ -162,7 +162,7 @@
                           alt="About Us"
                           id="aboutUsDesktopNav"
                           class="desktopNavigationButtons"
-                          >About us</a
+                          >About Us</a
                         >
                       </h1>
                       <h1 class="title is-size-2">
@@ -271,14 +271,28 @@
       <!--End of Fixed contact div on right-->
       <!--Fixed Nav at bottom Start-->
       <div id="bottomNav">
-        <a href="#homeSection" style="color: white; font-weight: bold;">Home</a>
-        <a href="#aboutUsSection" style="color: white; font-weight: bold;"
+        <a
+          href="#homeSection"
+          style="color: white; font-weight: bold;"
+          class="is-size-5-desktop is-size-6-mobile"
+          >Home</a
+        >
+        <a
+          href="#aboutUsSection"
+          style="color: white; font-weight: bold;"
+          class="is-size-5-desktop is-size-6-mobile"
           >About Us</a
         >
-        <a href="#servicesSection" style="color: white; font-weight: bold;"
+        <a
+          href="#servicesSection"
+          style="color: white; font-weight: bold;"
+          class="is-size-5-desktop is-size-6-mobile"
           >Services</a
         >
-        <a href="#sectorsSection" style="color: white; font-weight: bold;"
+        <a
+          href="#sectorsSection"
+          style="color: white; font-weight: bold;"
+          class="is-size-5-desktop is-size-6-mobile"
           >Sectors</a
         >
       </div>
@@ -371,7 +385,7 @@
           </div>
           <div class="column">
             <img
-              src="./images/aboutus.jpg"
+              src="./images/aboutUs.jpg"
               alt="About Us: Get to know us and our services"
               loading="lazy"
               class="section_image"
@@ -441,7 +455,7 @@
             </h1>
             <hr class="is-size-1 has-text-centered divider" />
             <p class="is-size-4 is-size-5-mobile has-text-centered sectionText">
-              Our team of experiences CAs (CPAs) has successfully provided
+              Our team of experiences CAs (CPAs) has successfully provided
               services to various industry sectors. Our continuously increasing
               knowledge and expertise of these industries advances our
               development of industry specific tools, benchmarks and offerings.
@@ -504,7 +518,7 @@
                       class="input is-medium"
                       type="text"
                       name="Organization Name"
-                      placeholder="Organiztion Name"
+                      placeholder="Organization Name"
                       required
                     />
                     <span class="icon is-small is-left">
@@ -590,6 +604,7 @@
                 <p>South Tukoganj,</p>
                 <p>Indore, Madhya Pradesh</p>
                 <p>452001</p>
+                <p>India</p>
                 <i
                   class="fas fa-map-marker-alt findUsOnMapIcon"
                   style="color: white;"
@@ -615,6 +630,7 @@
                 <p>NS Phadke Marg, Andheri East,</p>
                 <p>Mumbai, Maharashtra</p>
                 <p>400069</p>
+                <p>India</p>
                 <i
                   class="fas fa-map-marker-alt findUsOnMapIcon"
                   style="color: white;"
@@ -640,6 +656,7 @@
                 <p>Plot No.82, IP Extension,</p>
                 <p>Patparganj, New Delhi</p>
                 <p>110091</p>
+                <p>India</p>
                 <i
                   class="fas fa-map-marker-alt findUsOnMapIcon"
                   style="color: white;"
@@ -660,31 +677,6 @@
           <hr class="footer-divider" />
           <div class="container">
             <div class="row">
-              <!-- <div class="columns is-gapless">
-                <div
-                  class="column is-one-sixth emailPhoneDetails has-text-left"
-              <div class="columns is-multiline">
-                <div class="column is-6">
-                  <div class="column emailPhoneDetails">
-                    <i class="fas fa-envelope" style="color: white;"> </i>
-                    Email: &nbsp;
-                    <a
-                      href="mailto: info@theladderup.com"
-                      class="emailPhoneLinks"
-                    >
-                      info@theladderup.com
-                    </a>
-                  </div>
-                  <div class="column emailPhoneDetails">
-                    <i class="fas fa-phone-alt" style="color: white;"></i>
-                    Phone No: &nbsp;
-                    <a
-                      href="mailto: info@theladderup.com"
-                      class="emailPhoneLinks"
-                    >
-                      +919826955855
-                    </a>
-                  </div> -->
               <div class="columns">
                 <div
                   class="column is-one-quarter emailPhoneDetails has-text-left"
@@ -701,11 +693,8 @@
                 <div class="column is-3 emailPhoneDetails has-text-left">
                   <i class="fas fa-phone-alt" style="color: white;"></i>
                   Phone No: &nbsp;
-                  <a
-                    href="mailto: info@theladderup.com"
-                    class="emailPhoneLinks"
-                  >
-                    +919826955855
+                  <a href="tel: +919826955855" class="emailPhoneLinks">
+                    +91&nbsp;98269&nbsp;55855
                   </a>
                 </div>
 
@@ -718,16 +707,6 @@
                         ><i class="fab fa-facebook"></i
                       ></a>
                     </li>
-                    <!-- <li>
-                      <a class="twitter" href="#"
-                        ><i class="fab fa-twitter"></i
-                      ></a>
-                    </li> -->
-                    <!-- <li>
-                      <a class="instagram" href="#"
-                        ><i class="fab fa-instagram"></i
-                      ></a>
-                    </li> -->
                     <li>
                       <a
                         class="linkedin"
@@ -822,30 +801,38 @@
       //Start of hover functions for Desktop navigation Buttons
       $("#homeDesktopNav").mouseover(function () {
         $("#circle").addClass("circleBackgroundOnHome");
+        $(".brandName").addClass("brandNameOnNavigationHover");
       });
       $("#homeDesktopNav").mouseout(function () {
         $("#circle").removeClass("circleBackgroundOnHome");
+        $(".brandName").removeClass("brandNameOnNavigationHover");
       });
 
       $("#aboutUsDesktopNav").mouseover(function () {
         $("#circle").addClass("circleBackgroundOnAboutUs");
+        $(".brandName").addClass("brandNameOnNavigationHover");
       });
       $("#aboutUsDesktopNav").mouseout(function () {
         $("#circle").removeClass("circleBackgroundOnAboutUs");
+        $(".brandName").removeClass("brandNameOnNavigationHover");
       });
 
       $("#servicesDesktopNav").mouseover(function () {
         $("#circle").addClass("circleBackgroundOnServices");
+        $(".brandName").addClass("brandNameOnNavigationHover");
       });
       $("#servicesDesktopNav").mouseout(function () {
         $("#circle").removeClass("circleBackgroundOnServices");
+        $(".brandName").removeClass("brandNameOnNavigationHover");
       });
 
       $("#sectorsDesktopNav").mouseover(function () {
         $("#circle").addClass("circleBackgroundOnSectors");
+        $(".brandName").addClass("brandNameOnNavigationHover");
       });
       $("#sectorsDesktopNav").mouseout(function () {
         $("#circle").removeClass("circleBackgroundOnSectors");
+        $(".brandName").removeClass("brandNameOnNavigationHover");
       });
       //End of hover functions for Desktop Navigations
     });

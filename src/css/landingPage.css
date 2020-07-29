@@ -16,7 +16,7 @@
 }
 
 .circleBackgroundOnAboutUs {
-  background-image: url("../images/aboutus.jpg");
+  background-image: url("../images/aboutUs.jpg");
 }
 
 .circleBackgroundOnServices {
@@ -53,6 +53,11 @@
   font-size: 3rem;
   line-height: 1.4;
   padding-left: 0.7rem;
+}
+
+.title.brandName.brandNameOnNavigationHover {
+  color: rgba(18, 172, 146, 0.8);
+  background-color: white;
 }
 
 .subtitle.tagline {

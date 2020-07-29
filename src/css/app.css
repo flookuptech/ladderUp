@@ -57,6 +57,8 @@ body {
 #contactDivOnRight a {
   display: flex;
   background: rgba(18, 172, 146, 0.8);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   width: 175px;
   align-items: center;
   justify-content: center;
@@ -75,6 +77,8 @@ body {
   height: 10vh;
   width: 50vw;
   left: 25vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   position: fixed;
   bottom: 0;
   background-color: black;
@@ -224,6 +228,8 @@ body {
   #bottomNav {
     width: 100vw;
     left: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 }
 
@@ -374,7 +380,6 @@ h1.aboutNumber {
   color: #12ac92;
   margin-left: 8rem;
   margin-right: 8rem;
-  /* border-top: 3px white solid; */
   border-bottom: 3px white solid;
 }
 
