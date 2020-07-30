@@ -157,7 +157,7 @@ body {
   h1.sectionOne {
     line-height: 4.3rem;
     font-size: 5rem;
-    margin-top: -2rem;
+    margin-top: 4rem;
     margin-bottom: 6rem;
     margin-left: 1rem;
   }
@@ -211,6 +211,23 @@ body {
   ul.social-icons {
     margin-top: -1rem;
     margin-bottom: 1rem;
+  }
+
+  .homePage,
+  .aboutUsPage,
+  .sectorsPage,
+  .servicesPage {
+    margin-top: 18rem;
+  }
+
+  h1.videoTitle {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 80%;
+    border-bottom: 3px solid white;
   }
 }
 
@@ -436,7 +453,18 @@ h1.aboutNumber {
   color: #12ac92;
 }
 
-.team {
+.officeVideo {
+  margin-top: 4rem;
+}
+
+.videoTitle {
+  color: #12ac92;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.team,
+.videoTitle {
   content: "";
   display: block;
   margin: 0 auto;
@@ -709,3 +737,10 @@ a.hamburgerMenuItem {
   margin-top: -1rem;
   margin-bottom: 1rem;
 } */
+
+.homePage,
+.aboutUsPage,
+.sectorsPage,
+.servicesPage {
+  margin-top: -8.5rem;
+}
