@@ -21,7 +21,43 @@ const CONFIG = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      filename: "./index.html",
+      filename: "index.html",
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/home.html",
+      filename: "home.html",
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/aboutUs.html",
+      filename: "aboutUs.html",
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/services.html",
+      filename: "services.html",
+      minify: {
+        collapseWhitespace: true,
+        minifyCSS: true,
+        removeComments: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/sectors.html",
+      filename: "sectors.html",
       minify: {
         collapseWhitespace: true,
         minifyCSS: true,
@@ -46,25 +82,26 @@ const CONFIG = {
     new OptimizeCssAssetsPlugin({
       cssProcessorOptions: { discardComments: { removeAll: true } },
     }),
-    new CopyWebpackPlugin([
-      {
-        from: "src/images/",
-        to: "images/",
-      },
-      {
-        from: "src/*.txt",
-        to: "./[name].[ext]",
-        toType: "template",
-      },
-    ]),
     new ImageminPlugin({
       disable: devMode,
-      test: /\.(jpe?g|png|gif|svg)$/i,
+      test: /\.(jpeg|png|gif|svg)$/i,
       optipng: { optimizationLevel: 3 },
       jpegtran: { progressive: true },
       gifsicle: { optimizationLevel: 1 },
       svgo: {},
     }),
+    new CopyWebpackPlugin([
+      {
+        from: "./src/images",
+        to: "images",
+      },
+    ]),
+    new CopyWebpackPlugin([
+      {
+        from: "./src/videos",
+        to: "videos",
+      },
+    ]),
   ],
   module: {
     rules: [
@@ -73,9 +110,6 @@ const CONFIG = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            // options: {
-            //   hmr: devMode,
-            // },
           },
           {
             loader: "css-loader",
@@ -97,11 +131,13 @@ const CONFIG = {
         ],
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|svg|jpg|jpeg)$/,
         use: [
           {
             loader: "file-loader",
-            options: {},
+            options: {
+              name: "./images/[name].[ext]",
+            },
           },
         ],
       },
