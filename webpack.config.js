@@ -21,7 +21,7 @@ const CONFIG = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      filename: "./index.html",
+      filename: "index.html",
       minify: {
         collapseWhitespace: true,
         minifyCSS: true,
@@ -29,8 +29,8 @@ const CONFIG = {
       },
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/home.html",
-      filename: "./pages/home.html",
+      template: "./src/home.html",
+      filename: "home.html",
       minify: {
         collapseWhitespace: true,
         minifyCSS: true,
@@ -38,8 +38,8 @@ const CONFIG = {
       },
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/aboutUs.html",
-      filename: "./pages/aboutUs.html",
+      template: "./src/aboutUs.html",
+      filename: "aboutUs.html",
       minify: {
         collapseWhitespace: true,
         minifyCSS: true,
@@ -47,8 +47,8 @@ const CONFIG = {
       },
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/services.html",
-      filename: "./pages/services.html",
+      template: "./src/services.html",
+      filename: "services.html",
       minify: {
         collapseWhitespace: true,
         minifyCSS: true,
@@ -56,8 +56,8 @@ const CONFIG = {
       },
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/sectors.html",
-      filename: "./pages/sectors.html",
+      template: "./src/sectors.html",
+      filename: "sectors.html",
       minify: {
         collapseWhitespace: true,
         minifyCSS: true,
@@ -90,6 +90,18 @@ const CONFIG = {
       gifsicle: { optimizationLevel: 1 },
       svgo: {},
     }),
+    new CopyWebpackPlugin([
+      {
+        from: "./src/images",
+        to: "images",
+      },
+    ]),
+    new CopyWebpackPlugin([
+      {
+        from: "./src/videos",
+        to: "videos",
+      },
+    ]),
   ],
   module: {
     rules: [
@@ -98,9 +110,6 @@ const CONFIG = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            // options: {
-            //   hmr: devMode,
-            // },
           },
           {
             loader: "css-loader",
@@ -122,11 +131,13 @@ const CONFIG = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|jpeg)$/,
         use: [
           {
             loader: "file-loader",
-            options: {},
+            options: {
+              name: "./images/[name].[ext]",
+            },
           },
         ],
       },
